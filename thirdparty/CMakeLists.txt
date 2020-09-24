@@ -15,9 +15,9 @@ find_package(VisionCore     NO_DEFAULT_PATH PATHS ${BUILD_DIR}/vision_core REQUI
 find_package(brisk          PATHS ${INSTALL_DIR}/lib/CMake REQUIRED) # Stefan's "CMake" instead of "cmake"
 find_package(CameraDrivers  QUIET REQUIRED)
 find_package(DBoW2          QUIET REQUIRED)
-find_package(GTSAM          QUIET REQUIRED)
 find_package(opengv         QUIET REQUIRED)
-find_package(Eigen3         QUIET REQUIRED)
+find_package(GTSAM        REQUIRED PATH build/gtsam)
+find_package(Eigen3       REQUIRED PATH build/eigen)
 find_package(Pangolin       QUIET REQUIRED)
 
 ## ------------------------------------------------------------------------------
